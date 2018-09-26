@@ -1,0 +1,294 @@
+
+ #stage {
+ position: absolute;
+ margin-top:10px;
+ margin-left:0px;
+    width: 2500px;
+    height: 400px;
+	
+  }
+  
+  .img
+  {
+  width:2173px;
+  height:700px;
+  border:thin;
+  border-color:#00CC00;
+  }
+  
+
+  #stage a {
+    position: absolute;
+  }
+  #stage a img {
+    border: 1px solid #ccc;
+    background: #fff;
+  }
+
+  #stage a:nth-of-type(1) {
+    animation-name: fader;
+    animation-delay: 3s;
+    animation-duration: 1s;
+    z-index: 20;
+  }
+  #stage a:nth-of-type(2) {
+    z-index: 10;
+  }
+  #stage a:nth-of-type(n+3) {
+    display: none;
+  }
+
+  @keyframes fader {
+    from { opacity: 1.0; }
+    to   { opacity: 0.0; }
+  }
+  
+  .logo
+	{
+		background-color:rgba(0,0,0,0.1);
+		background-repeat: no-repeat;
+	}
+		
+		b
+		{
+			font-size: 50;
+			font-family: cursive;
+			color: white;
+			background-repeat: no-repeat;
+		}
+	
+		a
+		{
+			text-decoration: none;
+			color: black;
+			background-repeat: no-repeat;
+
+		}
+	
+
+	ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    background-color: #333;
+	z-index:50;
+}
+
+li {
+    float: right;
+	z-index:50;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 14px 35px;
+    text-decoration: none;
+	z-index:50;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #CCCCCC;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index:50;
+
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+	z-index:50;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+/*text slider......................................................................................*/
+body
+{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  max-width: all;
+  max-height: all;
+  }
+
+  .container
+  {
+    position: relative;
+    width: 2200px;
+    height: 300px;
+    margin-top: 710px;
+    
+    }
+
+
+.container .box
+{
+  position: relative;
+  width: calc(400px - 40px);
+  height: calc(300px - 40px);
+  background: #000;
+  float: left;
+  margin: 37px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px;
+} 
+
+.container .box .icon
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: 0.5s;
+  z-index: 1;
+}
+.container .box:hover .icon
+{
+  top: 20px;
+  left: calc(50% - 40px);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+
+}
+.container .box .icon .fa
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  transition: 0.5s;
+  color: #fff;
+}
+
+.container .box:hover .icon .fa
+{
+  font-size: 40px;
+}
+.container .box .content
+{
+  position: absolute;
+  top: 100%;
+  height: calc(100% - 100px);
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  opacity: 0;
+}
+.container .box:hover .content
+{
+  top: 100px;
+  opacity: 1;
+}
+.container .box .content h1
+{
+  margin: 0 0 10px;
+  padding: 0;
+  color: #fff;
+  font-size: 24px;
+}
+
+.container .box .content p
+{
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  }
+
+  .container .box:nth-child(1) .icon
+{
+  background: #319635;
+}
+.container .box:nth-child(1)
+{
+  background: #4caf50;
+}
+
+.container .box:nth-child(2) .icon
+{
+  background: #d03852;
+}
+.container .box:nth-child(2)
+{
+  background: #f54967;
+}
+.container .box:nth-child(3) .icon
+{
+  background: #23798e;
+}
+.container .box:nth-child(3)
+{
+  background: #328fa5;
+}
+
+.container .box:nth-child(4) .icon
+{
+  background: #e1d80e;
+}
+.container .box:nth-child(4)
+{
+  background: #c7bf0e;
+}
+
+.container .box:nth-child(5) .icon
+{
+  background: #0f63f2;
+}
+.container .box:nth-child(5)
+{
+  background: #0e52c7;
+}
+/*footer starat-------------------------------------------------------------------------------*/
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+  font-family: "open Sans";
+}
+a{
+  text-decoration: none;
+  outline: none;
+}
+a img{
+  border: none;
+}
+.clr{
+  width: 100%;
+  height:auto;
+  margin: auto;
+  background: #fadf83;
+  padding: 30px 20px;
+  
+}
